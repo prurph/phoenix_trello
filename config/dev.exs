@@ -43,3 +43,6 @@ config :phoenix_trello, PhoenixTrello.Repo,
   database: "phoenix_trello_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :guardian, Guardian,
+  secret_key: "eatingsnowflakeswithplasticforksandapaperplateofcourseyouthinkof"
