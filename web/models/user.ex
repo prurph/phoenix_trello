@@ -12,6 +12,9 @@ defmodule PhoenixTrello.User do
     timestamps
   end
 
+  # Tell Poison (default JSON library) which fields to serialize.
+  @derive {Poison.Encoder, only: [:id, :first_name, :last_name, :email]}
+
   @required_fields ~w(first_name last_name email password)
   @optional_fields ~w(encrypted_password)
 
